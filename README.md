@@ -1,2 +1,2 @@
 # Counter
-# Worked with Jeremy Okamoto on this assignment.
+Worked with Jeremy Okamoto on this assignment.
