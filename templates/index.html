@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="container text-center text-primary mt-5">
+        <h1>This page has been counted:</h1>
+        <div class="number display-6">
+            {{session['counter']}}
+        </div>
+        <h1>times.</h1>
+        <div class="d-flex flex-row justify-content-center">
+            <form action='/count' method='post'>
+                <input class="rounded-pill" type='submit' name='count' value='Count' style="margin: 10px; border: 2px solid black; width: 100px; background-color: lightsteelblue; color: black;"></form>
+            <form action='/destroy_session' method='post'>
+                <input class="rounded-pill" type='submit' name='reset' value='Reset' style="margin: 10px; border: 2px solid black; border-radius: 20%; width: 100px; background-color: maroon; color: whitesmoke;"></form>
+        </div>
+    </div>
+</body>
+</html>
